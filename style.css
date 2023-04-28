@@ -17,3 +17,19 @@ canvas{
  
     border-radius: 30px;
 }
+
+.button{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+}

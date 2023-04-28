@@ -1,6 +1,6 @@
 let canvas = document.querySelector('canvas');
 let context = canvas.getContext('2d');
-
+let button = document.querySelector('button')
 /* context.fillStyle = 'cyan';
 context.fillRect(100, 100, 400, 400); */
 
@@ -27,10 +27,20 @@ for (let i = 0; i < 5; i++){
     let x = 100 + (width + gap) * j;
 
 
-    context.lineWidth = 10;
+    context.lineWidth = 5;
     context.beginPath();
-    context.rect(x, y , width, heigth);
+    context.rect(x, y , width, height);
     context.stroke();
 
+   // if(button === true){
+
+    if (Math.random() > 0.5){
+    context.lineWidth = 2;
+    context.beginPath();
+    context.rect(x + 8, y + 8, width - 16, height - 16);
+    context.stroke();
     }
+//}
+}
+
 }
